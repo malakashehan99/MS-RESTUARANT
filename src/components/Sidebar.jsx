@@ -4,28 +4,28 @@ import mylogo from '../assets/mslogo.png';
 
 const Sidebar = () => {
   return (
-    <div className="bg-red-700 h-screen w-1/5 fixed top-0 left-0 overflow-y-auto">
+    <div className="fixed top-0 left-0 w-1/5 h-screen overflow-y-auto bg-red-700">
       <div className="p-4">
-        <h1 className="text-center text-2xl font-bold mb-4 mt-2 bg-gradient-to-r from-blue-200 via-red-200 to to-blue-400 bg-clip-text text-transparent">MS RESTAURANT</h1>
+        <h1 className="mt-2 mb-4 text-3xl font-bold text-center text-transparent bg-gradient-to-r from-blue-200 via-red-200 to-blue-400 bg-clip-text">MS RESTAURANT</h1>
         <img 
         src={mylogo}
         alt='logo'
-        className='mx-auto mb-10 mt-10 py-6 hover:scale-105'/>
-        <ul>
+        className='py-6 mx-auto mt-10 mb-10 hover:scale-105'/>
+        <ul className='font-mono text-xl font-semibold'>
           <li>
-            <Link to="/" className="text-white block py-2 px-4 hover:bg-gray-700">Home</Link>
+            <Link to="/" className="block px-4 py-2 text-white hover:bg-gray-700">Home</Link>
           </li>
           <li>
-            <Link to="/menu" className="text-white block py-2 px-4 hover:bg-gray-700">Menu</Link>
+            <Link to="/menu" className="block px-4 py-2 text-white hover:bg-gray-700">Menu</Link>
           </li>
           <li>
-            <Link to="/about" className="text-white block py-2 px-4 hover:bg-gray-700">About</Link>
+            <Link to="/about" className="block px-4 py-2 text-white hover:bg-gray-700">About</Link>
           </li>
           <li>
-            <Link to="/contact" className="text-white block py-2 px-4 hover:bg-gray-700">Contact Us</Link>
+            <Link to="/contact" className="block px-4 py-2 text-white hover:bg-gray-700">Contact Us</Link>
           </li>
           <li>
-            <Link to="/login" className="text-white block mt-4 py-2 px-4 hover:bg-gray-700">Login</Link>
+            <Link to="/login" className="block px-4 py-2 mt-4 text-white bg-orange-600 rounded background-size:contain hover:bg-gray-700">Login</Link>
           </li>
         </ul>
       </div>
@@ -34,3 +34,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
