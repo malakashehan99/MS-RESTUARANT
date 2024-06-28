@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import backgroundImage1 from '../assets/loginbackground1.jpg';
 import backgroundImage2 from '../assets/loginbackground2.jpg';
 
-function Login({ onLogin }) {
-  const [username, setUsername] = useState('Malaka19Shehan');
-  const [password, setPassword] = useState('ms123456');
+function Login() {
+  const [username, setUsername] = useState('Malaka19Shehan'); // Default username
+  const [password, setPassword] = useState('ms123456'); // Default password
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
   const [currentBackground, setCurrentBackground] = useState(1);
@@ -28,7 +28,7 @@ function Login({ onLogin }) {
       setErrorMessage('Invalid username or password. Please try again.');
     } else {
       setErrorMessage('');
-      onLogin();
+      
       navigate('/'); // Navigate to the home page upon successful login
     }
   };
@@ -83,6 +83,12 @@ function Login({ onLogin }) {
               Login
             </button>
           </div>
+          <p className="mt-4 text-sm text-center text-gray-700">
+            <span className="text-gray-400">You can use default username as </span>
+            <strong>Malaka19Shehan</strong>
+            <span className="text-gray-400"> & password as </span>
+            <strong>ms123456</strong>
+          </p>
           <p className="mt-4 text-sm text-center text-black">
             Don't have an account?{' '}
             <NavLink to="/register" className="text-blue-500">
