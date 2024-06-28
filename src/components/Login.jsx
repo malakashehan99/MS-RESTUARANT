@@ -28,7 +28,6 @@ function Login() {
       setErrorMessage('Invalid username or password. Please try again.');
     } else {
       setErrorMessage('');
-      
       navigate('/'); // Navigate to the home page upon successful login
     }
   };
