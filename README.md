@@ -16,7 +16,7 @@ A restaurant website built using **React** and **Tailwind CSS**, providing users
 
 ## Setup Instructions
 
-## 1. Install dependencies
+### 1. Install dependencies
 ```bash
 npm install
 ```
